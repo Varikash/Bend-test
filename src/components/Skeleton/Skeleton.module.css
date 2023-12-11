@@ -1,0 +1,34 @@
+.skeleton {
+  background-color: #2b4e87;
+  border-radius: 4px;
+  margin: 10px 0;
+  opacity: .5;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.skeletonBox {
+  width: 100%;
+  height: 100px;
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(to right, #2b4e87 8%, #3b5998 18%, #2b4e87 33%);
+  background-size: 1000px 104px;
+  opacity: .8;
+}
+
+.skeletonText {
+  width: 80%;
+  height: 20px;
+  margin-top: 10px;
+  animation: shimmer 1.5s infinite linear;
+  background: linear-gradient(to right, #2b4e87 8%, #3b5998 18%, #2b4e87 33%);
+  background-size: 1000px 104px;
+  opacity: .8;
+}
