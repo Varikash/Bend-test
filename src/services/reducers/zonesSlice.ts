@@ -5,12 +5,8 @@ import { ZoneData } from '../../types/Zone.types';
 export const fetchZones = createAsyncThunk(
   'zones/fetchZones',
   async () => {
-    try {
-      const response = await fetchAreas();
-      return response as ZoneData[];
-    } catch (error: any) {
-      throw new Error(`Error with getting data: ${error.message}`)
-    }
+    const response = await fetchAreas();
+    return response as ZoneData[];
   }
 )
 
