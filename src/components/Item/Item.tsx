@@ -1,6 +1,6 @@
 import React from 'react';
 import Style from './Item.module.css';
-import { ItemProps } from './ItemProps.types';
+import { ItemProps } from '../../types/ItemProps.types';
 
 const Item: React.FC<ItemProps> = ({sku, defaultSku, joinedWith}) => {
   const itemClass = joinedWith !== null ? `${Style.item} ${Style.joined}` : Style.item;

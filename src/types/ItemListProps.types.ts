@@ -1,4 +1,4 @@
-import { Thing } from "../../types/Thing.types";
+import { Thing } from "./Thing.types";
 
 export interface ItemListProps {
   items: Thing[][];

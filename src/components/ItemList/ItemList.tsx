@@ -2,7 +2,7 @@ import React from 'react';
 import Style from './ItemList.module.css';
 import Item from "../Item/Item";
 import Skeleton from '../Skeleton/Skeleton';
-import { ItemListProps } from './ItemListProps.types';
+import { ItemListProps } from '../../types/ItemListProps.types';
 import { Thing } from '../../types/Thing.types';
 
 const ItemList: React.FC<ItemListProps> = ({ items, isLoading }) => {

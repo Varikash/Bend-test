@@ -1,0 +1,48 @@
+:root {
+  --indicator-open: #f4e704;
+  --indicator-closed: #f64d25;
+  --indicator-mixed: #ff9800;
+}
+
+
+.container {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.itemList {
+  position: relative;
+  display: flex;
+  column-gap: 15px;
+  row-gap: 15px;
+  align-items: center;
+}
+
+.indicator {
+  width: 7px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  clip-path: polygon(36% 13%, 70% 18%, 90% 30%, 90% 70%, 70% 82%, 36% 87%, 0 89%, 0% 70%, 0% 35%, 0 11%);
+}
+
+
+@media screen and (max-width: 664px){
+  .indicator {
+    height: 50px;
+    top: 11px
+  }
+}
+
+@media screen and (max-width: 464px){
+  .indicator {
+    height: 45px;
+    top: 2.5px
+  }
+}
