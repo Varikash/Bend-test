@@ -20,10 +20,12 @@ const SwitchButton = () => {
 
 	return (
 		<div className={Style.switchContainer}>
+			<p className={Style.paragraph}>Functional components</p>
 			<label className={Style.switch}>
 				<input type="checkbox" checked={isToggled} onChange={toggleSwitch} />
 				<span className={Style.slider}></span>
 			</label>
+			<p className={Style.paragraph}>Class components</p>
 		</div>
 	);
 };
