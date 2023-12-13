@@ -7,12 +7,11 @@ import SwitchButton from '../SwitchButton/SwitchButton';
 function App() {
 
   const location = useLocation();
-  const background = location.state && location.state.background;
   
   return (
     <main className={Style.main}>
       <SwitchButton />
-      <Routes location={background || location}>
+      <Routes location={location}>
         <Route path="/" element={<FuncPage />}/>
         <Route path="/class" element={<ClassPage/>}/>
       </Routes>

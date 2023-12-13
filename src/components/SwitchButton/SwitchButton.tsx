@@ -13,7 +13,7 @@ const SwitchButton = () => {
 
   return (
     <div className={Style.switchContainer}>
-      <p>Functional components</p>
+      <p className={Style.paragraph}>Functional components</p>
       <label className={Style.switch}>
         <input
           type="checkbox"
@@ -22,7 +22,7 @@ const SwitchButton = () => {
         />
         <span className={Style.slider}></span>
       </label>
-      <p>Class Components</p>
+      <p className={Style.paragraph}>Class Components</p>
     </div>
   );
 };
