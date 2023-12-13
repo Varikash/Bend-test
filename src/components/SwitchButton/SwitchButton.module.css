@@ -21,16 +21,13 @@
 .slider {
 	position: absolute;
 	cursor: pointer;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	inset: 0;
 	background-color: #ccc;
 	transition: 0.4s;
 	border-radius: 34px;
 }
 
-.slider:before {
+.slider::before {
 	position: absolute;
 	content: '';
 	height: 26px;
@@ -50,7 +47,7 @@ input:focus + .slider {
 	box-shadow: 0 0 1px #2196f3;
 }
 
-input:checked + .slider:before {
+input:checked + .slider::before {
 	transform: translateX(26px);
 }
 
@@ -58,13 +55,13 @@ input:checked + .slider:before {
 	font-size: 25px;
 }
 
-@media screen and (max-width: 664px) {
+@media screen and (width <= 664px) {
 	.paragraph {
 		font-size: 18px;
 	}
 }
 
-@media screen and (max-width: 464px) {
+@media screen and (width <= 464px) {
 	.paragraph {
 		font-size: 12px;
 	}
