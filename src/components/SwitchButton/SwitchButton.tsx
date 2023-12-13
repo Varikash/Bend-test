@@ -1,19 +1,25 @@
-import { useState } from 'react';
-import Style from './SwitchButton.module.css'
-import { useNavigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
+import Style from './SwitchButton.module.css';
 
 const SwitchButton = () => {
-  const [isToggled, setIsToggled] = useState(false);
+  const location = useLocation();
   const navigate = useNavigate();
+
+  const initialToggleState = location.pathname === '/class';
+  const [isToggled, setIsToggled] = useState(initialToggleState);
 
   const toggleSwitch = () => {
     setIsToggled(!isToggled);
-    navigate(isToggled ? '/': '/class');
+    navigate(!isToggled ? '/class' : '/');
   };
+
+  useEffect(() => {
+    setIsToggled(location.pathname === '/class');
+  }, [location]);
 
   return (
     <div className={Style.switchContainer}>
-      <p className={Style.paragraph}>Functional components</p>
       <label className={Style.switch}>
         <input
           type="checkbox"
@@ -22,7 +28,6 @@ const SwitchButton = () => {
         />
         <span className={Style.slider}></span>
       </label>
-      <p className={Style.paragraph}>Class Components</p>
     </div>
   );
 };
