@@ -1,8 +1,8 @@
 export interface ZoneData {
-  areaId: number;
-  name: string;
+	areaId: number;
+	name: string;
 }
 
 export interface ZoneProps {
-  data: ZoneData;
+	data: ZoneData;
 }

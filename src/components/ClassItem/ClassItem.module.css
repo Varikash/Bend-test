@@ -1,65 +1,65 @@
 .item {
-  position: relative;
-  width: 150px;
-  height: 100px;
-  background-color: #2b4e87;
-  border-radius: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	position: relative;
+	width: 150px;
+	height: 100px;
+	background-color: #2b4e87;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .item.joined::before {
-  content: '';
-  display: block;
-  position: absolute;
-  left: -15px;
-  width: 15px;
-  height: 72px;
-  background-color: #203d74;
+	content: '';
+	display: block;
+	position: absolute;
+	left: -15px;
+	width: 15px;
+	height: 72px;
+	background-color: #203d74;
 }
 
 .sku {
-  font-size: 30px;
+	font-size: 30px;
 }
 
 .defaultSku {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 18px;
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 18px;
 }
 
-@media screen and (max-width: 664px){
-  .item {
-    width: 100px;
-    height: 75px;
-  }
+@media screen and (max-width: 664px) {
+	.item {
+		width: 100px;
+		height: 75px;
+	}
 
-  .item.joined::before {
-    height: 55px;
-  }
+	.item.joined::before {
+		height: 55px;
+	}
 
-  .sku {
-    font-size: 20px;
-  }
+	.sku {
+		font-size: 20px;
+	}
 }
 
-@media screen and (max-width: 464px){
-  .item {
-    width: 60px;
-    height: 50px;
-  }
+@media screen and (max-width: 464px) {
+	.item {
+		width: 60px;
+		height: 50px;
+	}
 
-  .item.joined::before {
-    height: 30px;
-  }
+	.item.joined::before {
+		height: 30px;
+	}
 
-  .sku {
-    font-size: 15px;
-  }
+	.sku {
+		font-size: 15px;
+	}
 
-  .defaultSku {
-    font-size: 12px;
-  }
+	.defaultSku {
+		font-size: 12px;
+	}
 }

@@ -1,6 +1,6 @@
-import { Thing } from "./Thing.types";
+import { Thing } from './Thing.types';
 
 export interface ItemListProps {
-  items: Thing[][];
-  isLoading: boolean;
+	items: Thing[][];
+	isLoading: boolean;
 }

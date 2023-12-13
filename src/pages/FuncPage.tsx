@@ -1,9 +1,7 @@
-import ZoneList from "../components/ZoneList/ZoneList"
+import ZoneList from '../components/ZoneList/ZoneList';
 
 const FuncPage = () => {
-  return(
-    <ZoneList/>
-  )
-}
+	return <ZoneList />;
+};
 
 export default FuncPage;

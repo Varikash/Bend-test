@@ -1,5 +1,5 @@
 export interface ItemProps {
-  sku: string;
-  defaultSku: string;
-  joinedWith: number | null;
+	sku: string;
+	defaultSku: string;
+	joinedWith: number | null;
 }
